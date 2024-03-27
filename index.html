@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chain-of-Select-Boxes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="container">
+        <p class="site-heading">Chain Of Select Boxes</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="select-box-section">
+        <div class="container">
+          <div class="select-box-wrapper">
+            <select class="select-box" name="countries" id="countries">
+              <option value="">--Choose a Country--</option>
+            </select>
+
+            <select class="select-box" name="states" id="states" disabled>
+              <option value="">--Choose a State--</option>
+            </select>
+
+            <select class="select-box" name="cities" id="cities" disabled>
+              <option value="">--Choose a city--</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section class="address-section">
+        <div class="container">
+          <div class="address-wrapper">
+            <span id="city"></span>
+            <span id="state"></span>
+            <span id="country"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
